@@ -20,15 +20,11 @@ public class Ejercicio_1 {
             if (numeros[i] > 0) {
                 n_Positivo++;
             }
-        }
 
-        for (int i = 0; numeros.length > i; i++) {
             if (numeros[i] < 0) {
                 n_Negativo++;
             }
-        }
 
-        for (int i = 0; numeros.length > i; i++) {
             if (numeros[i] == 0) {
                 n_0++;
             }
