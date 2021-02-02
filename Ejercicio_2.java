@@ -23,18 +23,15 @@ public class Ejercicio_2 {
             if (numeros[i] > 0) {
                 media_Positivo += numeros[i];
                 contador_Positivo++;
+
+                if (numeros[i] < 0) {
+                    media_Negativo += numeros[i];
+                    contador_Negativo++;
+                }
             }
         }
 
         media_Positivo = media_Positivo / contador_Positivo;
-
-        for (int i = 0; numeros.length > i; i++) {
-            if (numeros[i] < 0) {
-                media_Negativo += numeros[i];
-                contador_Negativo++;
-            }
-        }
-
         media_Negativo = media_Negativo / contador_Negativo;
 
         if (contador_Positivo != 0) {
@@ -48,5 +45,6 @@ public class Ejercicio_2 {
         } else {
             System.out.println("No has introducido ningún número negativo");
         }
+
     }
 }
