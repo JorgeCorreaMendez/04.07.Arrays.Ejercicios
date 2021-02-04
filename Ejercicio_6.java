@@ -6,7 +6,7 @@ public class Ejercicio_6 {
 
         System.out.print("Introduce el tamaño de la array: ");
         int n = leer.nextInt();
-        int ultimoDijito;
+        int ultimodigito;
 
         double[] nAleatorios = new double[n];
 
@@ -17,12 +17,12 @@ public class Ejercicio_6 {
 
         do {
             System.out.print("Introduce un número: ");
-            ultimoDijito = leer.nextInt();
+            ultimodigito = leer.nextInt();
 
-            if(ultimoDijito < 0 || ultimoDijito > 10){
+            if(ultimodigito < 0 || ultimodigito > 10){
                 System.out.println("El número tiene que estar entre 0 y 10");
             }
-        } while (ultimoDijito < 0 || ultimoDijito > 10);
+        } while (ultimodigito < 0 || ultimodigito > 10);
 
         leer.close();
 
@@ -36,9 +36,9 @@ public class Ejercicio_6 {
 
                 calculo = (calculo - calculoTruncado) * 10;
 
-                if (ultimoDijito != calculo)
+                if (ultimodigito != calculo)
                     continue;
-                System.out.println("El número " + nAleatorios[i] + " acaba en " + ultimoDijito);
+                System.out.println("El número " + nAleatorios[i] + " acaba en " + ultimodigito);
                 System.out.println("------------------------------------------");
             }
 
@@ -49,14 +49,14 @@ public class Ejercicio_6 {
 
                 calculo = (calculo - calculoTruncado) * 10;
 
-                if (ultimoDijito != calculo)
+                if (ultimodigito != calculo)
                     continue;
-                System.out.println("El número " + nAleatorios[i] + " acaba en " + ultimoDijito);
+                System.out.println("El número " + nAleatorios[i] + " acaba en " + ultimodigito);
                 System.out.println("------------------------------------------");
             }
 
-            if (nAleatorios[i] == ultimoDijito) {
-                System.out.println("El número " + nAleatorios[i] + " acaba en " + ultimoDijito);
+            if (nAleatorios[i] == ultimodigito) {
+                System.out.println("El número " + nAleatorios[i] + " acaba en " + ultimodigito);
                 System.out.println("------------------------------------------");
             }
 
