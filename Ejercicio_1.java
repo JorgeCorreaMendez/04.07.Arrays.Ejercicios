@@ -12,11 +12,7 @@ public class Ejercicio_1 {
         for (int i = 0; numeros.length > i; i++) {
             System.out.print("Introduzca el " + (i + 1) + "º número: ");
             numeros[i] = leer.nextInt();
-        }
 
-        leer.close();
-
-        for (int i = 0; numeros.length > i; i++) {
             if (numeros[i] > 0) {
                 n_Positivo++;
             }
@@ -29,6 +25,8 @@ public class Ejercicio_1 {
                 n_0++;
             }
         }
+
+        leer.close();
 
         System.out.println("Hay " + n_0 + " Numeros iguales a 0");
         System.out.println("Hay " + n_Positivo + " Numeros positivos");

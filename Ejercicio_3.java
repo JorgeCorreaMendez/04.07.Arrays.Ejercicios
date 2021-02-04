@@ -5,7 +5,7 @@ public class Ejercicio_3 {
         Scanner leer = new Scanner(System.in);
 
         int n = 0;
-        double alturaMedia = 0;
+        int alturaMedia = 0;
 
         int mediaSuperior = 0;
         int mediaInferior = 0;
@@ -20,26 +20,24 @@ public class Ejercicio_3 {
             }
         } while (n <= 0);
 
-        double[] alturas = new double[n];
+        int[] alturas = new int[n];
 
         System.out.println("----------------------------");
 
         for (int i = 0; alturas.length > i; i++) {
-            System.out.print("Introduzca la " + (i + 1) + "º altura: ");
-            alturas[i] = leer.nextDouble();
+            System.out.print("Introduzca la " + (i + 1) + "º altura (en cm): ");
+            alturas[i] = leer.nextInt();
+
+            alturaMedia = +alturas[i];
         }
 
         leer.close();
 
-        for (int i = 0; alturas.length > i; i++) {
-            alturaMedia = +alturas[i];
-        }
-
-        alturaMedia = n / alturaMedia;
+        alturaMedia = alturaMedia / n;
 
         System.out.println("----------------------------");
 
-        System.out.println("La altura media es: " + alturaMedia);
+        System.out.println("La altura media es: " + alturaMedia + "cm");
 
         System.out.println("----------------------------");
 
@@ -47,15 +45,11 @@ public class Ejercicio_3 {
             if (alturas[i] > alturaMedia) {
                 mediaSuperior++;
             }
-        }
 
-        for (int i = 0; alturas.length > i; i++) {
             if (alturas[i] < alturaMedia) {
                 mediaInferior++;
             }
-        }
 
-        for (int i = 0; alturas.length > i; i++) {
             if (alturas[i] == alturaMedia) {
                 mediaIgual++;
             }

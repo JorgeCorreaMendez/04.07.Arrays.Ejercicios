@@ -15,21 +15,19 @@ public class Ejercicio_2 {
         for (int i = 0; numeros.length > i; i++) {
             System.out.print("Introduzca el " + (i + 1) + "º número: ");
             numeros[i] = leer.nextInt();
-        }
 
-        leer.close();
-
-        for (int i = 0; numeros.length > i; i++) {
             if (numeros[i] > 0) {
                 media_Positivo += numeros[i];
                 contador_Positivo++;
+            }
 
-                if (numeros[i] < 0) {
-                    media_Negativo += numeros[i];
-                    contador_Negativo++;
-                }
+            if (numeros[i] < 0) {
+                media_Negativo += numeros[i];
+                contador_Negativo++;   
             }
         }
+
+        leer.close();
 
         media_Positivo = media_Positivo / contador_Positivo;
         media_Negativo = media_Negativo / contador_Negativo;

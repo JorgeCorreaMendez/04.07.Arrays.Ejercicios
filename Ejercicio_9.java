@@ -57,9 +57,7 @@ public class Ejercicio_9 {
             if(sexo[i] == 2){
                 cantMujeres++;
             }
-        }
 
-        for(int i = 0;trabajo.length > 1;i++){
             if(sexo[i] == 1 && trabajo[i] == 1){
                 hombresTrabajan++;
             }
@@ -67,9 +65,7 @@ public class Ejercicio_9 {
             if(sexo[i] == 2 && trabajo[i] == 1){
                 mujeresTrabajan++;
             }
-        }
 
-        for(int i = 0;sueldo.length > 1;i++){
             if(sexo[i] == 1 && trabajo[i] == 1){
                 sueldo_medioHombres =+ sueldo[i];
             }
